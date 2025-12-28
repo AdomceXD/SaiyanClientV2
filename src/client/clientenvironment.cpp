@@ -135,7 +135,8 @@ void ClientEnvironment::step(float dtime)
 			// Liquid floating / sinking
 			if (!is_climbing && lplayer->in_liquid &&
 					!lplayer->swimming_vertical &&
-					!lplayer->swimming_pitch)
+					!lplayer->swimming_pitch &&
+					!g_settings->getBool("jesus"))
 				// HACK the factor 2 for gravity is arbitrary and should be removed eventually
 				lplayer->gravity = 2 * lplayer->movement_liquid_sink * lplayer->physics_override.liquid_sink;
 
