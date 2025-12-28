@@ -196,6 +196,8 @@ sneak_speed (No sneak slowdown) bool false
 #   Jesus
 jesus (Jesus hack) bool false
 
+#   No fall damage
+no_fall (No fall damage) bool false
 
 
 
