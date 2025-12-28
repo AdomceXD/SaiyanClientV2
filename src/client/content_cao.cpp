@@ -39,6 +39,7 @@
 #include <SMesh.h>
 #include <IMeshBuffer.h>
 #include <CMeshBuffer.h>
+#include <../settings.h>
 
 struct ToolCapabilities;
 
