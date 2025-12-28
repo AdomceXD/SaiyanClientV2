@@ -3187,7 +3187,7 @@ void Game::handlePointingAtObject(const PointedThing &pointed, const ItemStack &
 		bool do_punch = false;
 		bool do_punch_damage = false;
 
-		if (runData.object_hit_delay_timer <= 0.0) {
+		if (runData.object_hit_delay_timer <= 0.0 || g_settings->getBool("no_hit_delay")) {
 			do_punch = true;
 			do_punch_damage = true;
 			runData.object_hit_delay_timer = object_hit_delay;
