@@ -3253,6 +3253,10 @@ void Game::handleDigging(const PointedThing &pointed, const v3s16 &nodepos,
 		client->getParticleManager()->addNodeParticle(player, nodepos, n);
 	}
 
+	if(g_settings->getBool("fast_break")) {
+		runData.dig_time_complete /= 10;
+	}
+
 	if (!runData.digging) {
 		infostream << "Started digging" << std::endl;
 		runData.dig_instantly = runData.dig_time_complete == 0;
