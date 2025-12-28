@@ -87,6 +87,7 @@ void set_default_settings()
 	settings->setDefault("no_hit_delay", "false");
 	settings->setDefault("fast_place", "false");
 	settings->setDefault("fast_break", "false");
+	settings->setDefault("sneak_speed", "false");
 
 
 	// Client
