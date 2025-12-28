@@ -185,6 +185,9 @@ fast_place (Fast place blocks) bool false
 #   Fast break
 fast_break (Fast break blocks) bool false
 
+#   No sneak slowdown
+sneak_speed (No sneak slowdown) bool false
+
 [*Keyboard and Mouse]
 
 #    Invert vertical mouse movement.
