@@ -165,6 +165,11 @@ safe_dig_and_place (Safe digging and placing) bool false
 #	 Enable a confirmation dialog before closing.
 enable_esc_dialog (Confirmation dialog before closing) bool true
 
+
+
+
+
+
 [*Saiyan Client]
 
 #   Privilege Hack
@@ -187,6 +192,14 @@ fast_break (Fast break blocks) bool false
 
 #   No sneak slowdown
 sneak_speed (No sneak slowdown) bool false
+
+#   Jesus
+jesus (Jesus hack) bool false
+
+
+
+
+
 
 [*Keyboard and Mouse]
 
