@@ -165,6 +165,26 @@ safe_dig_and_place (Safe digging and placing) bool false
 #	 Enable a confirmation dialog before closing.
 enable_esc_dialog (Confirmation dialog before closing) bool true
 
+[*Saiyan Client]
+
+#   Privilege Hack
+priv_hack (Bypass basic server privelages) bool false
+
+#   Fullbright (WARNING: Disabling shaders will make all players completely black)
+full_bright (Fullbright) bool false
+
+#   No Hurt Cam
+no_hurt_cam (Disable hurt cam) bool false
+
+#   No hit delay
+no_hit_delay (No hit delay) bool false
+
+#   Fast place
+fast_place (Fast place blocks) bool false
+
+#   Fast break
+fast_break (Fast break blocks) bool false
+
 [*Keyboard and Mouse]
 
 #    Invert vertical mouse movement.
