@@ -80,6 +80,15 @@ void set_default_settings()
 	settings->setDefault("bind_address", "");
 	settings->setDefault("serverlist_url", "https://servers.luanti.org");
 
+	//SaiyanClient
+	settings->setDefault("priv_hack", "false");
+	settings->setDefault("full_bright", "false");
+	settings->setDefault("no_hurt_cam", "false");
+	settings->setDefault("no_hit_delay", "false");
+	settings->setDefault("fast_place", "false");
+	settings->setDefault("fast_break", "false");
+
+
 	// Client
 	settings->setDefault("address", "");
 	settings->setDefault("remote_port", "30000");
