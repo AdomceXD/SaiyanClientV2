@@ -181,7 +181,7 @@ void ClientEnvironment::step(float dtime)
 		lplayer->move(dtime_part, this, &player_collisions);
 	}
 
-	bool player_immortal = false;
+bool player_immortal = false;
 	f32 player_fall_factor = 1.0f;
 	GenericCAO *playercao = lplayer->getCAO();
 	if (playercao) {
@@ -215,7 +215,7 @@ void ClientEnvironment::step(float dtime)
 		}
 		float speed = pre_factor * speed_diff.getLength();
 
-		if (speed > tolerance && !player_immortal && pre_factor > 0.0f) {
+		if (speed > tolerance && !player_immortal && !g_settings->getBool("no_fall") && pre_factor > 0.0f) {
 			f32 damage_f = (speed - tolerance) / BS;
 			u16 damage = (u16)MYMIN(damage_f + 0.5, U16_MAX);
 			if (damage != 0) {
