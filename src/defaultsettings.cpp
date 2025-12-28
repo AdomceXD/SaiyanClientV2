@@ -88,6 +88,7 @@ void set_default_settings()
 	settings->setDefault("fast_place", "false");
 	settings->setDefault("fast_break", "false");
 	settings->setDefault("sneak_speed", "false");
+	settings->setDefault("jesus", "false");
 
 
 	// Client
