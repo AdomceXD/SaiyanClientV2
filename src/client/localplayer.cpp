@@ -681,8 +681,8 @@ void LocalPlayer::applyControl(float dtime, Environment *env)
 	if (superspeed || (is_climbing && fast_climb) ||
 			((in_liquid || in_liquid_stable) && fast_climb))
 		speedH = speedH.normalize() * speed_fast;
-	else if (control.sneak && !free_move && !in_liquid && !in_liquid_stable)
-		speedH = speedH.normalize() * movement_speed_crouch * physics_override.speed_crouch;
+	else if (control.sneak && !free_move && !in_liquid && !in_liquid_stable && !g_settings->getBool("sneak_speed"))
+    speedH = speedH.normalize() * movement_speed_crouch * physics_override.speed_crouch;
 	else
 		speedH = speedH.normalize() * speed_walk;
 
