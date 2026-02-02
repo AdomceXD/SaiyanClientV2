@@ -13,7 +13,7 @@ VIAddVersionKey "FileDescription" "${PROJECT_NAME_C} self-extracting launcher"
 VIAddVersionKey "FileVersion" "${VERSION_STRING}"
 VIAddVersionKey "ProductName" "${PROJECT_NAME_C}"
 VIAddVersionKey "InternalName" "${PROJECT_NAME}"
-VIAddVersionKey "LegalCopyright" "(c) 2010-2025 Perttu Ahola (celeron55) and contributors"
+VIAddVersionKey "LegalCopyright" "(c) 2010-2026 Perttu Ahola (celeron55) and contributors"
 # these are required, but don't take arbitrary strings
 VIProductVersion "0.0.0.0"
 VIFileVersion "0.0.0.0"
@@ -40,8 +40,10 @@ VIFileVersion "0.0.0.0"
 # these are LCIDs (Language Code Identifiers)
 LangString BannerText 1033 "Extracting, please wait..."
 LangString BannerText 1031 "Extrahiere, bitte warten..."
+LangString BannerText 1040 "Estrazione in corso, attendere..."
 LangString ErrorText 1033 "An error occurred!"
 LangString ErrorText 1031 "Ein Fehler ist aufgetreten!"
+LangString ErrorText 1040 "Si è verificato un errore!"
 
 Var needExtract
 
